@@ -139,6 +139,24 @@ function Navbar() {
             ),
         },
         {
+            key: 'tr',
+            label: (
+                <div className="languages-single" onClick={(e) => {
+                    e.stopPropagation()
+                    e.preventDefault()
+                    var lang = "tr"
+                
+                    setCookie("language", lang)
+                    i18n.changeLanguage(lang)
+
+                    setCurrentLang([lang])
+                }}>
+                    <img className="flags" src={require("../assets/images/Flags/TR.png")} alt="tr flags"/>
+                    <p>Türkçe</p>
+                </div>
+            ),
+        },
+        {
             key: 'help',
             label: (
                 <div className="languages-single" onClick={(e) => {

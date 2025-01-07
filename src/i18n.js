@@ -8,6 +8,7 @@ import ruTranslation from "./i18n/ru.json"
 import idTranslation from "./i18n/id.json"
 import jpTranslation from "./i18n/jp.json"
 import vnTranslation from "./i18n/vn.json"
+import trTranslation from "./i18n/tr.json"
 
 import { getCookie, setCookie } from "./lib/GeneralMixins"
 
@@ -33,6 +34,9 @@ i18n.use(initReactI18next).init({
     },
     vn: {
       translation: vnTranslation
+    },
+    tr: {
+      translation: trTranslation
     },
   },
   lng: "en", // Default language
